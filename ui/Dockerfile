@@ -33,6 +33,6 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx/nginx.conf /etc/nginx/conf.d
 # --------- /only for those using react router ----------
 # expose port 80 to the outer world
-EXPOSE 80
+EXPOSE 3000
 # start nginx 
 CMD ["nginx", "-g", "daemon off;"]
